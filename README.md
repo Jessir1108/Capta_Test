@@ -46,7 +46,7 @@ aws configure --profile your-profile
 # - Default output format: json
 ```
 
-4. Actualizar scripts en `package.json` con tu perfil AWS (si es diferente):
+4. Actualizar scripts en `package.json` con tu perfil AWS:
 
 ```json
 {
@@ -142,7 +142,7 @@ https://tw0fhokbpk.execute-api.us-east-1.amazonaws.com/prod/working-days
 ```json
 {
   "error": "InvalidParameters",
-  "message": "At least one of \"days\" or \"hours\" must be provided"
+  "message": "No query parameters provided"
 }
 ```
 
@@ -401,10 +401,6 @@ aws configure --profile your-profile
 aws sts get-caller-identity --profile your-profile
 ```
 
-### Error: Failed to fetch holidays
-
-El Lambda tiene un fallback con festivos hardcodeados si la URL externa falla.
-
 ### Tests fallan
 
 ```bash
@@ -421,10 +417,6 @@ Jessir Daniel Florez Hamburger
 ## 🔗 Links
 
 - **API en producción**: https://tw0fhokbpk.execute-api.us-east-1.amazonaws.com/prod/working-days
-- **Repositorio**: [GitHub URL]
+- **Repositorio**: https://github.com/Jessir1108/Capta_Test.git
 - **Documentación AWS CDK**: https://docs.aws.amazon.com/cdk/
 - **date-fns-tz**: https://github.com/marnusw/date-fns-tz
-
----
-
-**Hecho con ❤️ usando TypeScript y AWS CDK**
