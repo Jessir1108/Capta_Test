@@ -1,0 +1,45 @@
+{
+  "name": "working-days-api",
+  "version": "1.0.0",
+  "description": "API para calcular fechas hábiles en Colombia",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -w -p tsconfig.json",
+    "cdk": "cdk",
+    "bootstrap": "cdk bootstrap --profile jessir_cli",
+    "synth": "cdk synth --profile jessir_cli",
+    "deploy": "cdk deploy --profile jessir_cli",
+    "destroy": "cdk destroy --profile jessir_cli",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "working-days",
+    "colombia",
+    "lambda",
+    "cdk"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.145",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^20.0.0",
+    "aws-cdk": "^2.149.0",
+    "aws-cdk-lib": "^2.149.0",
+    "constructs": "^10.3.0",
+    "esbuild": "^0.21.0",
+    "jest": "^30.2.0",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.0"
+  },
+  "dependencies": {
+    "aws-lambda": "^1.0.7",
+    "axios": "^1.7.0",
+    "date-fns": "^3.6.0",
+    "date-fns-tz": "^3.1.0"
+  }
+}
